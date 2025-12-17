@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css"> <!-- STYLE OVDJE -->
+</head>
+<body>
+<h2>Dashboard</h2>
+
+<!-- RASPRED SATI -->
+<h3>Raspored sati</h3>
+<input id="day" placeholder="Dan">
+<input id="subject" placeholder="Predmet">
+<button onclick="addSchedule()">Dodaj</button>
+<ul id="schedule"></ul>
+
+<!-- OCJENE -->
+<h3>Ocjene</h3>
+<input id="gSubject" placeholder="Predmet">
+<input id="grade" placeholder="Ocjena">
+<button onclick="addGrade()">Spremi</button>
+<ul id="grades"></ul>
+
+<!-- KONTROLNI / PISMENI -->
+<h3>Kontrolni / Pismeni</h3>
+<input id="exam" placeholder="Predmet + datum">
+<button onclick="addExam()">Dodaj</button>
+<ul id="exams"></ul>
+
+<!-- LEKCIJE / FLASH CARDS -->
+<h3>Lekcije / Flash Cards</h3>
+<input id="lesson" placeholder="Lekcija">
+<button onclick="addLesson()">Spremi</button>
+<ul id="lessons"></ul>
+
+<!-- SCRIPT TAGOVI NA KRAJU BODY -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="schedule.js"></script>
+<script src="grades.js"></script>
+<script src="exams.js"></script>
+<script src="lessons.js"></script>
+
+</body>
+</html>
